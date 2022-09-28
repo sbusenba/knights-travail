@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "webpack": "^5.74.0"
+  },
+  "name": "odin-knights-travail",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbusenba/odin-knights-travail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbusenba/odin-knights-travail/issues"
+  },
+  "homepage": "https://github.com/sbusenba/odin-knights-travail#readme"
+}
