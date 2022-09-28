@@ -1,7 +1,12 @@
 const knightMoves = require("./knightMoves")
 const knightView = require("./knightView")
-console.log('starting')
 let body = document.querySelector("body")
-body.appendChild(knightView(knightMoves([1,1],[1,2])))
+let array = knightMoves([1,1],[2,6])
+body.appendChild(knightView(array))
+console.log (`found a path with ${array.length-1} moves`)
+array.forEach((move,index)=>{
+    if (index === 0) {console.log("start: "+move)} else {
+console.log(`move ${index}: `+move)}
+})
 
 

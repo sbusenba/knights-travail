@@ -26,7 +26,6 @@ let knightMoves =([x,y],[finalX,finalY]) =>{
                 
                 if (newMove.onBoard()&&(visited[newMove.x][newMove.y] != true)){
 
-                    console.log('adding new move ')
                     parent.children = [...parent.children,
                                             newMove]
                     children.push(newMove)
@@ -35,7 +34,6 @@ let knightMoves =([x,y],[finalX,finalY]) =>{
                 if (newMove.x == finalX && newMove.y == finalY){
                     found = true;
                     finalNode = newMove
-                    console.log("found it!")
                 }
             })
         })
@@ -44,7 +42,6 @@ let knightMoves =([x,y],[finalX,finalY]) =>{
         children = []
         }
     }
-    console.table(finalNode)
     let finalPath = []
     finalNode.path.forEach((node)=>{finalPath.push([node.x,node.y])})
     finalPath.push([finalNode.x,finalNode.y])
