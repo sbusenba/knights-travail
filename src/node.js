@@ -32,8 +32,8 @@ class Node {
     get children (){
         return this.myChildren;
     }
-    set children (kiddos){
-        this.myChildren = kiddos
+    set children (childNodes){
+        this.myChildren = childNodes
     }
     get path (){
         return this.myPath;
