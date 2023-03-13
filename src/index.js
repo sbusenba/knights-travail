@@ -5,10 +5,15 @@ let x1 = Math.floor(Math.random()*8)
 let y1 = Math.floor(Math.random()*8)
 let x2 = Math.floor(Math.random()*8)
 let y2 = Math.floor(Math.random()*8)
+
 console.log(`from ${x1},${y1} to ${x2},${y2}`)
 let array = knightMoves([x1,y1],[x2,y2])
+let clickHandler = (e)=>{
 
-body.appendChild(knightView(array))
+
+}
+
+body.appendChild(knightView([]))
 console.log (`found a path with ${array.length-1} moves`)
 array.forEach((move,index)=>{
     if (index === 0) {console.log("start: "+move)} else {
