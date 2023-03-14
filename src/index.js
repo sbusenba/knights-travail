@@ -1,6 +1,10 @@
 const knightMoves = require("./knightMoves")
 const knightView = require("./knightView")
-let body = document.querySelector("body")
+import './style.css'
+
+
+
+let body = document.querySelector(".container")
 let x1 = null
 let y1 = null
 let x2 = null
@@ -16,8 +20,8 @@ function clearBoard (){
 
 
 let clickHandler = (e)=>{
-    xClicked = parseInt(e.target.getAttribute('data-x'))
-    yClicked = parseInt(e.target.getAttribute('data-y'))
+    let xClicked = parseInt(e.target.getAttribute('data-x'))
+    let yClicked = parseInt(e.target.getAttribute('data-y'))
     if ((x1 === null)&&(y1===null)){
         console.log('1st click')
         x1 = xClicked 
@@ -71,8 +75,5 @@ document.querySelectorAll('.cell').forEach((cell)=>{
     cell.addEventListener('click',clickHandler)
 })
 
-
-/*
-*/
 
 
