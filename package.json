@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "style-loader": "^3.3.2",
     "webpack": "^5.74.0"
   },
   "name": "odin-knights-travail",
@@ -7,6 +8,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "css-loader": "^6.7.3",
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
