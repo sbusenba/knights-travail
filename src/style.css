@@ -6,4 +6,5 @@ body{
     padding:1rem;
     margin:.5rem;
     background-color: bisque;
+    max-width:300px;
 }
